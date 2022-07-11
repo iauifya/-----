@@ -1,0 +1,228 @@
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  text-decoration: none;
+  padding: 0;
+}
+
+#app {
+  width: 100vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app .phone {
+  background-color: #fafafa;
+  border-radius: 8px;
+  width: 30%;
+  min-height: 90vh;
+  -webkit-box-shadow: 2px 16px 19px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 16px 19px rgba(0, 0, 0, 0.25);
+}
+
+#app .phone .calendar {
+  background-color: #EAE6E4;
+  padding: 0 6px;
+  border-radius: 8px 8px 0 0;
+}
+
+#app .phone .calendar .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#app .phone .calendar .header .tag {
+  width: calc(100%/7);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  color: #95908A;
+  font-weight: 600;
+}
+
+#app .phone .calendar .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 6px;
+}
+
+#app .phone .calendar .body .dayBox {
+  width: calc(100%/7);
+  text-align: center;
+  padding: 0 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 6px;
+}
+
+#app .phone .calendar .body .dayBox.active .infos {
+  background-color: #323859;
+  color: #fbfbfb;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#app .phone .calendar .body .dayBox .infos {
+  padding: .3rem .5rem;
+  cursor: pointer;
+}
+
+#app .phone .calendar .body .dayBox .infos .lunar {
+  font-size: 12px;
+  margin-top: -4px;
+}
+
+#app .phone .calendar .body .dayBox .eventDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8C8274;
+  margin-top: 4px;
+  opacity: 0;
+}
+
+#app .phone .calendar .body .dayBox .eventDot.has_event {
+  opacity: 1;
+}
+
+#app .phone .todos {
+  margin-top: 8px;
+  padding-left: 12px;
+}
+
+#app .phone .todos .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 4px;
+}
+
+#app .phone .todos .item .time {
+  width: 45px;
+}
+
+#app .phone .todos .item .title {
+  border-left: 2px solid #fac483;
+  padding-left: 8px;
+  font-weight: 600;
+}
+
+#app .phone .todos .item.type_work .title {
+  border-color: skyblue;
+}
+
+#app .phone .todos .item.type_learn .title {
+  border-color: #ebe987;
+}
+
+#app .phone .todos .item.type_play .title {
+  border-color: #87eb96;
+}
+
+#app .phone .todos .item.type_important .title {
+  border-color: #eb8787;
+}
+
+#app .phone .todos .item .remove_btn {
+  margin-left: 16px;
+  color: #95908A;
+  cursor: pointer;
+}
+
+#app .phone .todos .item .remove_btn:hover {
+  color: #404873;
+}
+
+#app .form {
+  margin-left: 2rem;
+}
+
+#app .form h3 {
+  font-weight: 600;
+}
+
+#app .form .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#app .form .form-group {
+  margin-right: 6px;
+}
+
+#app .form .form-group label {
+  font-weight: 600;
+}
+
+#app .form .form-group {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#app .form button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.btn-primary {
+  background-color: #323859;
+  border-color: #323859;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  background-color: #323859;
+  border-color: #323859;
+}
+
+.btn-primary:hover {
+  background-color: #404873;
+  border-color: #404873;
+}
+/*# sourceMappingURL=app.css.map */
